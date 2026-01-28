@@ -53,9 +53,9 @@ const saerchList = () => {
 	let listItems = [];
 
 	// JSON load
-	// $.getJSON("assets/ajax/search.json", function(data) {
-	// 	listItems = data.listItems;
-	// });
+	$.getJSON("assets/ajax/search.json", function(data) {
+		listItems = data.listItems;
+	});
 
 	// Search functionality
 	$("#searchInput").on("keyup", function() {
